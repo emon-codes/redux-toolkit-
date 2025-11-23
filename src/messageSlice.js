@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const slice = createSlice({
   name: "msg",
-  initialState: "",
-  reducers: { setMsg: (_, a) => a.payload }
+  initialState: "click button",
+  reducers: { setMsg: (_, actions) => actions.payload }
 });
 
 export const { setMsg } = slice.actions;
